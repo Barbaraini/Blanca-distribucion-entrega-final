@@ -216,8 +216,7 @@ h1 {
 
 @media screen and ( max-width: 680px) {
   .empresa  img { width: 350px; height: 300px;}
-  
-}
+  }
 
 
 .empresa a {
@@ -237,7 +236,7 @@ h1 {
 /*PRODUCTOS*/
 
 .verProductos {display: grid;
-  grid-template rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   gap: 20px;}
   
@@ -311,8 +310,13 @@ grid-template-columns: 1fr}
   color: white;
   background-color: grey;
   padding: 5px 5px;
-  font-size: 20px;
+  font-size: 15px;
 }
+
+@media screen and ( max-width: 480px) {
+  .sanitarios  { display: grid; 
+  grid-template-columns: 1fr;}
+  }
 .sanitarios h3 {
   font-size: 30px;color: grey; padding: 30px; margin:30px;
 }
@@ -345,12 +349,13 @@ grid-template-columns: 3fr 1fr 1fr 1fr;
 
 .fotosFoa img{
     width: 400px;
-    height: 300px;
-    object-fit: cover;
+     object-fit: cover;
     box-shadow: -37px -11px 25px 18px rgba(0,0,0,0.63);
 -webkit-box-shadow: -37px -11px 25px 18px rgba(0,0,0,0.63);
 -moz-box-shadow: -37px -11px 25px 18px rgba(0,0,0,0.63);
 }
+
+.estuvimos img {height: 100%; padding: 10px;}
 .estuvimos h2 {
   font-size: 40px; color: gray; padding-bottom: 30px;
 }
