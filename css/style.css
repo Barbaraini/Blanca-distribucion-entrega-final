@@ -214,13 +214,11 @@ h1 {
   height: 100%;
 }
 
-@media screen and ( max-width: 938px) {
-  .empresa  image { width: 350px; height: 300px;}
+@media screen and ( max-width: 680px) {
+  .empresa  img { width: 350px; height: 300px;}
   
 }
 
-
-  
 
 .empresa a {
   text-decoration: none;
@@ -312,7 +310,7 @@ grid-template-columns: 1fr}
   text-decoration: none;
   color: white;
   background-color: grey;
-  padding: 10px 10px;
+  padding: 5px 5px;
   font-size: 20px;
 }
 .sanitarios h3 {
