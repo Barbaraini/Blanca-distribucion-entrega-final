@@ -226,10 +226,10 @@ h1 {
   padding: 10px 15px;
 }
 .empresa h2 {
-  font-size: 30px;
+  font-size: 28px;
 }
 .empresa p {
-  font-size: 20px;
+  font-size: 25px;
   text-align: center;
   margin: 20px 15px;
 }
@@ -265,7 +265,7 @@ h1 {
 }
 
 
-@media screen and ( max-width: 386px) {
+@media screen and ( max-width: 374px) {
   .verProductos{display: flex;
     flex-direction: column;
     justify-content :center;
@@ -280,8 +280,10 @@ h1 {
  .mb-3 {padding: 20px; margin: 20px;
  }
 
- @media screen and ( max-width: 567px) {
-  .mapa{width: 100%};
+.mapa {width: 700px; height: 600px;}
+
+@media screen and ( max-width: 715px) {
+  .mapa{width: 350px; height: 300px;};
   } 
 
  .footerContacto div img {
@@ -344,6 +346,7 @@ footer div img {
 .footerEmpresa div img {
   width: 100px;
   height: 100px;
+  padding: 10PX;
 }
 /*NOVEDADES*/
 
