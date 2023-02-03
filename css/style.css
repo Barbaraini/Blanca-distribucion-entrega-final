@@ -229,7 +229,7 @@ h1 {
   font-size: 30px;
 }
 .empresa p {
-  font-size: 22px;
+  font-size: 20px;
   text-align: center;
   margin: 20px 15px;
 }
@@ -243,7 +243,6 @@ h1 {
 
 
 .verProductos div img {
-  width: 500;
   height: 500px;
 }
 .todos div img {
@@ -253,7 +252,6 @@ h1 {
 
 .verProductos div {
   border: 1px solid gray;
-  width: 400px;
   height: 470px;
   margin: 50px;
   text-align: center;
@@ -267,9 +265,12 @@ h1 {
 }
 
 
-@media screen and ( max-width: 950px) {
-  .verProductos{display:grid;
-grid-template-columns: 1fr}
+@media screen and ( max-width: 386px) {
+  .verProductos{display: flex;
+    flex-direction: column;
+    justify-content :center;
+    align-items: center;
+    gap: 50px; }
   } 
 
 /*CONTACTO*/
@@ -278,6 +279,10 @@ grid-template-columns: 1fr}
 
  .mb-3 {padding: 20px; margin: 20px;
  }
+
+ @media screen and ( max-width: 567px) {
+  .mapa{width: 100%};
+  } 
 
  .footerContacto div img {
   width: 100px;
@@ -313,7 +318,7 @@ grid-template-columns: 1fr}
   font-size: 15px;
 }
 
-@media screen and ( max-width: 480px) {
+@media screen and ( max-width: 415px) {
   .sanitarios  { display: grid; 
   grid-template-columns: 1fr;}
   }
@@ -368,7 +373,7 @@ grid-template-columns: 3fr 1fr 1fr 1fr;
   }
 
 .publicaciones div img {
-  width: 500px;height: 400px;}
+  width: 350px;height: 400px;}
 
 @media screen and ( max-width: 1035px) {
 .publicaciones{grid-template-columns: 1fr};
