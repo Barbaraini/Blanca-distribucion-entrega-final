@@ -1,0 +1,80 @@
+@media screen and (max-width: 680px) {
+    .empresa img {
+        width: 350px;
+        height: 300px;
+    }
+}
+
+
+@media screen and (max-width: 898px) {
+    .sanitarios {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 1035px) {
+    .publicaciones {
+        grid-template-columns: 1fr
+    }
+
+    ;
+}
+
+@media screen and (max-width: 830px) {
+    .fotosFoa {
+        display: grid;
+        grid-template-columns: 1fr
+    }
+
+    ;
+
+}
+
+@media screen and (max-width: 715px) {
+    .local {
+        .mapa {
+            width: 350px;
+            height: 300px;
+        }
+
+        ;
+    }
+}
+
+
+@media screen and (max-width: 756px) {
+    .destacados {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+}
+
+@media screen and (max-width: 756px) {
+    .destacados {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 45px;
+    }
+
+    .destacados .grupoDestacados {
+        justify-content: center;
+        align-items: center;
+        gap: 45px;
+    }
+
+    .cardDestacada h3 {
+        margin-top: 15px;
+    }
+
+    .cardDestacada .boton {
+        margin: 0px 90px;
+    }
+}

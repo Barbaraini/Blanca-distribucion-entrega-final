@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,300;1,400;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none; }
+
+.bg-condicion {
+  border: solid 2px gray; }
+
+/*--footer general--*/
+.footer div img {
+  width: 100px;
+  height: 100px; }
+
+.footerProdcutos div img {
+  width: 100px;
+  height: 100px; }
+
+.footerEmpresa div img {
+  width: 100px;
+  height: 100px;
+  padding: 10PX; }
+
+/*--HEADER--*/
+/*--INDEX--*/
+.bienvenido {
+  background-image: url(../Img/esta.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.bienvenido h1 {
+  font-size: 40 px;
+  margin-bottom: 20 px; }
+
+.bienvenido a {
+  text-decoration: none;
+  color: gray;
+  background-color: white;
+  font-size: 20px;
+  width: 200px;
+  height: 60px;
+  margin: 80px 90px; }
+  .bienvenido a:hover {
+    background-color: grey;
+    color: black; }
+
+.estiloNordico {
+  background-image: url(../Img/nordica.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px; }
+  .estiloNordico h2 {
+    font-size: 50px;
+    width: fit-content;
+    padding: 40px;
+    margin: 30px; }
+
+.ultimo h2 {
+  font-size: 35px;
+  padding: 50px 40px;
+  text-align: center; }
+
+.ultimo .ultimoGrupo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px; }
+  .ultimo .ultimoGrupo .ultimocardDestacada {
+    width: 320px;
+    height: 320px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; }
+    .ultimo .ultimoGrupo .ultimocardDestacada img {
+      width: 100%; }
+  .ultimo .ultimoGrupo .ultimocardDestacada img {
+    width: 100%; }
+  .ultimo .ultimoGrupo .ultimocardDestacada img {
+    width: 100%; }
+  .ultimo .ultimoGrupo .ultimocardDestacada img {
+    width: 100%; }
+
+.destacados {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px; }
+  .destacados .grupoDestacados {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px; }
+    .destacados .grupoDestacados .cardDestacada {
+      border: 1px solid gray;
+      width: 350px;
+      height: 350px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center; }
+      .destacados .grupoDestacados .cardDestacada img {
+        width: 2 250px;
+        height: 250px; }
+
+.carrusel div img {
+  width: 80%;
+  height: 500px; }
+
+/*--PRODUCTOS--*/
+.sanitarios {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: initial; }
+  .sanitarios div h3 {
+    font-size: 30px;
+    color: grey;
+    padding: 30px;
+    margin: 30px; }
+  .sanitarios div img {
+    width: 300px;
+    height: 300px; }
+  .sanitarios div a {
+    text-decoration: none;
+    color: white;
+    background-color: grey;
+    padding: 5px 5px;
+    font-size: 15px; }
+
+.footerEmpresa div img {
+  width: 100px;
+  height: 100px;
+  padding: 10PX; }
+
+/*--EMPRESA--*/
+.empresa h2 {
+  font-size: 28px; }
+
+.empresa p {
+  font-size: 25px;
+  text-align: center;
+  margin: 20px 15px; }
+
+/*--CONTACTO--*/
+.local .mapa {
+  width: 700px;
+  height: 600px; }
+
+.cosulta {
+  padding: 40px;
+  margin: 40px; }
+  .cosulta mb-3 {
+    padding: 20px;
+    margin: 20px; }
+
+.footerContacto div img {
+  width: 100px;
+  height: 100px; }
+
+/*NOVEDADES*/
+.estuvimos h2 {
+  font-size: 40px;
+  color: gray;
+  padding-bottom: 30px; }
+
+.fotosFoa {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 3fr 1fr 1fr 1fr; }
+  .fotosFoa img {
+    width: 400px;
+    object-fit: cover;
+    box-shadow: -37px -11px 25px 18px rgba(0, 0, 0, 0.63);
+    -webkit-box-shadow: -37px -11px 25px 18px rgba(0, 0, 0, 0.63);
+    -moz-box-shadow: -37px -11px 25px 18px rgba(0, 0, 0, 0.63); }
+  .fotosFoa img {
+    width: 400px;
+    object-fit: cover;
+    box-shadow: -37px -11px 25px 18px rgba(0, 0, 0, 0.63);
+    -webkit-box-shadow: -37px -11px 25px 18px rgba(0, 0, 0, 0.63);
+    -moz-box-shadow: -37px -11px 25px 18px rgba(0, 0, 0, 0.63); }
+  .fotosFoa img {
+    width: 400px;
+    object-fit: cover;
+    box-shadow: -37px -11px 25px 18px rgba(0, 0, 0, 0.63);
+    -webkit-box-shadow: -37px -11px 25px 18px rgba(0, 0, 0, 0.63);
+    -moz-box-shadow: -37px -11px 25px 18px rgba(0, 0, 0, 0.63); }
+
+.prensa h2 {
+  font-size: 43px;
+  color: grey;
+  padding: 40px;
+  margin: 10px; }
+
+.prensa .publicaciones {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px; }
+  .prensa .publicaciones div img {
+    width: 350px;
+    height: 400px; }
+
+@media screen and (max-width: 680px) {
+  .empresa img {
+    width: 350px;
+    height: 300px; } }
+
+@media screen and (max-width: 898px) {
+  .sanitarios {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    gap: 10px; } }
+
+@media screen and (max-width: 1035px) {
+  .publicaciones {
+    grid-template-columns: 1fr; } }
+
+@media screen and (max-width: 830px) {
+  .fotosFoa {
+    display: grid;
+    grid-template-columns: 1fr; } }
+
+@media screen and (max-width: 715px) {
+  .local .mapa {
+    width: 350px;
+    height: 300px; } }
+
+@media screen and (max-width: 756px) {
+  .destacados {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px; } }
+
+@media screen and (max-width: 756px) {
+  .destacados {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 45px; }
+  .destacados .grupoDestacados {
+    justify-content: center;
+    align-items: center;
+    gap: 45px; }
+  .cardDestacada h3 {
+    margin-top: 15px; }
+  .cardDestacada .boton {
+    margin: 0px 90px; } }
