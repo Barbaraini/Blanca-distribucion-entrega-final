@@ -147,8 +147,9 @@ header .logo {
 
 /*--PRODUCTOS--*/
 .sanitarios {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr; }
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
   .sanitarios div h3 {
     font-size: 30px;
     color: grey;
@@ -162,7 +163,7 @@ header .logo {
     color: white;
     background-color: grey;
     padding: 5px 5px;
-    font-size: 15px; }
+    font-size: 20px; }
 
 .footerEmpresa div img {
   width: 100px;
@@ -221,19 +222,17 @@ header .logo {
     width: 350px;
     height: 350px; }
 
+.prensa h2 {
+  font-size: 30px;
+  color: gray;
+  text-align: center; }
+
 @media screen and (max-width: 680px) {
   .empresa img {
     width: 350px;
     height: 300px; } }
 
-@media screen and (max-width: 641px) {
-  .sanitarios {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr;
-    gap: 10px; } }
-
-@media screen and (max-width: 405px) {
+@media screen and (max-width: 693px) {
   .sanitarios div {
     display: grid;
     grid-template-columns: 1fr; }

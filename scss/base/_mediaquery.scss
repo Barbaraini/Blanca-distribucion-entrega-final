@@ -6,16 +6,9 @@
 }
 
 
-@media screen and (max-width: 641px) {
-    .sanitarios {
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: 1fr;
-        gap: 10px;
-    }
-}
 
-@media screen and (max-width: 405px) {
+
+@media screen and (max-width: 693px) {
     .sanitarios div {
         display: grid;
         grid-template-columns: 1fr;
