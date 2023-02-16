@@ -192,9 +192,9 @@ header .logo {
     margin: 20px 15px; }
 
 /*--CONTACTO--*/
-.local iframe {
-  width: 350px;
-  height: 350px; }
+.local .mapa {
+  width: 650px;
+  height: 450px; }
 
 .consulta {
   padding: 40px;
