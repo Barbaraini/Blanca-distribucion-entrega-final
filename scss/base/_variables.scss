@@ -24,3 +24,6 @@ $ancho: 400px;
 .bg-condicion {
     @include modos(black)
 }
+
+%flex {display: flex;
+    align-items: center;}

@@ -9,17 +9,23 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;}
+    justify-content: center;
+    align-items: center;
+}
 
-   .bienvenido{
-     h1 {
-        font-size: 40 px;
+.bienvenido {
+    h1 {
+        font-size: 50 px;
         margin-bottom: 20 px;
+        font-weight: bold;
+        color: black
+        ;
     }
 
     a {
         text-decoration: none;
         color: gray;
+        text-align: center;
         background-color: white;
         font-size: 20px;
         width: $ancho /2;
@@ -28,7 +34,7 @@
 
         &:hover {
             background-color: grey;
-            color: black;
+            color: blue;
         }
     }
 }
@@ -47,21 +53,31 @@
     justify-content: center;
     gap: 20px;
 
-    a {}
-
     h2 {
-        font-size: 50px;
+        font-size: 100px;
         width: fit-content;
         padding: 40px;
         margin: 30px;
+        color: blue;
     }
 }
+
+.estiloNordico
+{
+    a
+    {font-size: 40px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;}
+}
+
 
 .ultimo {
     h2 {
         font-size: nth($font-size, 7);
         padding: 50px 40px;
         text-align: center;
+        
     }
 
     .ultimoGrupo {
@@ -106,21 +122,21 @@
     }
 }
 
+
+
 .destacados {
-    display: flex;
+    @extend %flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     gap: 50px;
 
-    h2 {}
+
 
     .grupoDestacados {
-        display: flex;
+        @extend %flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
-        align-items: center;
         gap: 25px;
 
         .cardDestacada {
@@ -136,24 +152,11 @@
             img {
                 width: 2$ancho /2 + 50;
                 height: 250px;
-            }
+            } }
 
-            a {}
-        }
+        
 
-        .cardDestacada {
-            img {}
-
-            a {}
-        }
-
-        .cardDestacada {
-            img {}
-
-            a {}
-        }
-    }
-}
+        
 
 .carrusel {
     div {
@@ -171,12 +174,11 @@
 /*--PRODUCTOS--*/
 
 .sanitarios {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: initial;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr ;
 
-    div {
+    
+div {@extend %flex;
         h3 {
             font-size: 30px;
             color: grey;
@@ -213,43 +215,41 @@
 
 /*--EMPRESA--*/
 
+.empresa {background-image:../;}
+
 .empresa {
+    background-image: (../Img/clientes-contentos.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+
     h2 {
         font-size: nth($font-size, 6);
     }
 
     p {
-        font-size: nth($font-size, 5);
+        font-size: nth($font-size, 1);
         text-align: center;
         margin: 20px 15px;
     }
 }
 
 /*--CONTACTO--*/
-.encontranos {
-    h3 {}
-
-    div {
-        a {}
-
-        img {}
-    }
-}
 
 .local {
-    h2 {}
-
     .mapa {
         width: 700px;
         height: 600px;
     }
 }
 
-.cosulta {
+.consulta {
     padding: 40px;
     margin: 40px;
-
-    h2 {}
 
     mb-3 {
         padding: 20px;
@@ -276,25 +276,7 @@
 }
 
 .fotosFoa {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 3fr 1fr 1fr 1fr;
-
-    img {
-        width: 400px;
-        object-fit: cover;
-        box-shadow: -37px -11px 25px 18px rgba(0, 0, 0, 0.63);
-        -webkit-box-shadow: -37px -11px 25px 18px rgba(0, 0, 0, 0.63);
-        -moz-box-shadow: -37px -11px 25px 18px rgba(0, 0, 0, 0.63);
-    }
-
-    img {
-        width: 400px;
-        object-fit: cover;
-        box-shadow: -37px -11px 25px 18px rgba(0, 0, 0, 0.63);
-        -webkit-box-shadow: -37px -11px 25px 18px rgba(0, 0, 0, 0.63);
-        -moz-box-shadow: -37px -11px 25px 18px rgba(0, 0, 0, 0.63);
-    }
+    display: inline;
 
     img {
         width: 400px;
@@ -304,26 +286,11 @@
         -moz-box-shadow: -37px -11px 25px 18px rgba(0, 0, 0, 0.63);
     }
 }
+
 
 .prensa {
-    h2 {
-        font-size: 43px;
+    h2 {font-size: 43px;
         color: grey;
         padding: 40px;
-        margin: 10px
-    }
-
-    .publicaciones {
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 20px;
-
-        div {
-            img {
-                width: 350px;
-                height: 400px;
-            }
-        }
-    }
-}
+        margin: 10px;}
+}}}

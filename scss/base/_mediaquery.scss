@@ -6,7 +6,7 @@
 }
 
 
-@media screen and (max-width: 898px) {
+@media screen and (max-width: 641px) {
     .sanitarios {
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
@@ -14,6 +14,42 @@
         gap: 10px;
     }
 }
+
+@media screen and (max-width: 405px) { 
+    .sanitarios
+        div {display: grid; grid-template-columns: 1fr;
+        a{ text-align: center;  width: 150px; }
+    }
+    }
+
+   
+
+   
+
+
+    div {
+        h3 {
+            font-size: 30px;
+            color: grey;
+            padding: 30px;
+            margin: 30px;
+        }
+
+        img {
+            width: 300px;
+            height: 300px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            background-color: grey;
+            padding: 5px 5px;
+            font-size: 15px;
+        }
+    }
+
+
 
 @media screen and (max-width: 1035px) {
     .publicaciones {
