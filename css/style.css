@@ -351,14 +351,13 @@ footer div img {
 }
 /*NOVEDADES*/
 
-.fotosFoa{display: grid;
-grid-template-rows: 1fr 1fr 1fr;
-grid-template-columns: 3fr 1fr 1fr 1fr; 
+.fotosFoa{display:flex; 
+  justify-content:center;
+  align-items: center;
 }
 
 .fotosFoa img{
-    width: 400px;
-     object-fit: cover;
+  object-fit: cover;
     box-shadow: -37px -11px 25px 18px rgba(0,0,0,0.63);
 -webkit-box-shadow: -37px -11px 25px 18px rgba(0,0,0,0.63);
 -moz-box-shadow: -37px -11px 25px 18px rgba(0,0,0,0.63);

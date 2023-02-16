@@ -18,8 +18,7 @@
         font-size: 50 px;
         margin-bottom: 20 px;
         font-weight: bold;
-        color: black
-        ;
+        color: black;
     }
 
     a {
@@ -62,13 +61,13 @@
     }
 }
 
-.estiloNordico
-{
-    a
-    {font-size: 40px;
-    color: black;
-    font-weight: bold;
-    text-decoration: none;}
+.estiloNordico {
+    a {
+        font-size: 40px;
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+    }
 }
 
 
@@ -77,7 +76,7 @@
         font-size: nth($font-size, 7);
         padding: 50px 40px;
         text-align: center;
-        
+
     }
 
     .ultimoGrupo {
@@ -129,34 +128,37 @@
     flex-direction: column;
     justify-content: center;
     gap: 50px;
+}
 
 
 
-    .grupoDestacados {
-        @extend %flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        gap: 25px;
+.grupoDestacados {
+    @extend %flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 25px;
+}
 
-        .cardDestacada {
-            border: 1px solid gray;
-            width: $ancho /2 + 150;
-            height: 350px;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            align-items: center;
+.cardDestacada {
+    border: 1px solid gray;
+    width: $ancho /2 + 150;
+    height: 350px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 
-            img {
-                width: 2$ancho /2 + 50;
-                height: 250px;
-            } }
+    img {
+        width: 2$ancho /2 + 50;
+        height: 250px;
+    }
+}
 
-        
 
-        
+
+
 
 .carrusel {
     div {
@@ -175,10 +177,12 @@
 
 .sanitarios {
     display: grid;
-    grid-template-columns:1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr;
 
-    
-div {@extend %flex;
+
+    div {
+        @extend %flex;
+
         h3 {
             font-size: 30px;
             color: grey;
@@ -215,10 +219,11 @@ div {@extend %flex;
 
 /*--EMPRESA--*/
 
-.empresa {background-image:../;}
+
 
 .empresa {
-    background-image: (../Img/clientes-contentos.png);
+    background-image: url("../Img/clientes-contentos.png");
+    margin: 0px;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -241,11 +246,12 @@ div {@extend %flex;
 /*--CONTACTO--*/
 
 .local {
-    .mapa {
-        width: 700px;
-        height: 600px;
+    iframe{
+        width: 350px;
+        height: 350px;
     }
 }
+
 
 .consulta {
     padding: 40px;
@@ -257,14 +263,7 @@ div {@extend %flex;
     }
 }
 
-.footerContacto {
-    div {
-        img {
-            width: 100px;
-            height: 100px;
-        }
-    }
-}
+
 
 /*NOVEDADES*/
 .estuvimos {
@@ -276,21 +275,21 @@ div {@extend %flex;
 }
 
 .fotosFoa {
-    display: inline;
-
-    img {
-        width: 400px;
-        object-fit: cover;
-        box-shadow: -37px -11px 25px 18px rgba(0, 0, 0, 0.63);
-        -webkit-box-shadow: -37px -11px 25px 18px rgba(0, 0, 0, 0.63);
-        -moz-box-shadow: -37px -11px 25px 18px rgba(0, 0, 0, 0.63);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    img{
+        width: 350px;
+        height: 350px;
     }
 }
 
-
-.prensa {
-    h2 {font-size: 43px;
-        color: grey;
-        padding: 40px;
-        margin: 10px;}
-}}}
+.publicaciones{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    img{
+        width: 350px;
+        height: 350px;
+    }
+}

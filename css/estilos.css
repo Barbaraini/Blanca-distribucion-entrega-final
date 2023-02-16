@@ -8,7 +8,7 @@
 .bg-condicion {
   border: solid 2px gray; }
 
-.destacados, .destacados .grupoDestacados, .destacados .grupoDestacados .sanitarios div {
+.destacados, .grupoDestacados, .sanitarios div {
   display: flex;
   align-items: center; }
 
@@ -121,95 +121,105 @@ header .logo {
   flex-direction: column;
   justify-content: center;
   gap: 50px; }
-  .destacados .grupoDestacados {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 25px;
-    /*--PRODUCTOS--*/
-    /*--EMPRESA--*/
-    /*--CONTACTO--*/
-    /*NOVEDADES*/ }
-    .destacados .grupoDestacados .cardDestacada {
-      border: 1px solid gray;
-      width: 350px;
-      height: 350px;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      align-items: center; }
-      .destacados .grupoDestacados .cardDestacada img {
-        width: 2 250px;
-        height: 250px; }
-    .destacados .grupoDestacados .carrusel div img {
-      width: 80%;
-      height: 500px; }
-    .destacados .grupoDestacados .sanitarios {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr; }
-      .destacados .grupoDestacados .sanitarios div h3 {
-        font-size: 30px;
-        color: grey;
-        padding: 30px;
-        margin: 30px; }
-      .destacados .grupoDestacados .sanitarios div img {
-        width: 300px;
-        height: 300px; }
-      .destacados .grupoDestacados .sanitarios div a {
-        text-decoration: none;
-        color: white;
-        background-color: grey;
-        padding: 5px 5px;
-        font-size: 15px; }
-    .destacados .grupoDestacados .footerEmpresa div img {
-      width: 100px;
-      height: 100px;
-      padding: 10PX; }
-    .destacados .grupoDestacados .empresa {
-      background-image: url(../Img/clientes-contentos.png);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-attachment: fixed;
-      background-size: cover;
-      text-align: center;
-      width: 100%;
-      height: 100%; }
-      .destacados .grupoDestacados .empresa h2 {
-        font-size: 28px; }
-      .destacados .grupoDestacados .empresa p {
-        font-size: 20px;
-        text-align: center;
-        margin: 20px 15px; }
-    .destacados .grupoDestacados .local .mapa {
-      width: 700px;
-      height: 600px; }
-    .destacados .grupoDestacados .consulta {
-      padding: 40px;
-      margin: 40px; }
-      .destacados .grupoDestacados .consulta mb-3 {
-        padding: 20px;
-        margin: 20px; }
-    .destacados .grupoDestacados .footerContacto div img {
-      width: 100px;
-      height: 100px; }
-    .destacados .grupoDestacados .estuvimos h2 {
-      font-size: 40px;
-      color: gray;
-      padding-bottom: 30px; }
-    .destacados .grupoDestacados .fotosFoa {
-      display: inline; }
-      .destacados .grupoDestacados .fotosFoa img {
-        width: 400px;
-        object-fit: cover;
-        box-shadow: -37px -11px 25px 18px rgba(0, 0, 0, 0.63);
-        -webkit-box-shadow: -37px -11px 25px 18px rgba(0, 0, 0, 0.63);
-        -moz-box-shadow: -37px -11px 25px 18px rgba(0, 0, 0, 0.63); }
-    .destacados .grupoDestacados .prensa h2 {
-      font-size: 43px;
-      color: grey;
-      padding: 40px;
-      margin: 10px; }
+
+.grupoDestacados {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 25px; }
+
+.cardDestacada {
+  border: 1px solid gray;
+  width: 350px;
+  height: 350px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center; }
+  .cardDestacada img {
+    width: 2 250px;
+    height: 250px; }
+
+.carrusel div img {
+  width: 80%;
+  height: 500px; }
+
+/*--PRODUCTOS--*/
+.sanitarios {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; }
+  .sanitarios div h3 {
+    font-size: 30px;
+    color: grey;
+    padding: 30px;
+    margin: 30px; }
+  .sanitarios div img {
+    width: 300px;
+    height: 300px; }
+  .sanitarios div a {
+    text-decoration: none;
+    color: white;
+    background-color: grey;
+    padding: 5px 5px;
+    font-size: 15px; }
+
+.footerEmpresa div img {
+  width: 100px;
+  height: 100px;
+  padding: 10PX; }
+
+/*--EMPRESA--*/
+.empresa {
+  background-image: url("../Img/clientes-contentos.png");
+  margin: 0px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+  width: 100%;
+  height: 100%; }
+  .empresa h2 {
+    font-size: 28px; }
+  .empresa p {
+    font-size: 20px;
+    text-align: center;
+    margin: 20px 15px; }
+
+/*--CONTACTO--*/
+.local iframe {
+  width: 350px;
+  height: 350px; }
+
+.consulta {
+  padding: 40px;
+  margin: 40px; }
+  .consulta mb-3 {
+    padding: 20px;
+    margin: 20px; }
+
+/*NOVEDADES*/
+.estuvimos h2 {
+  font-size: 40px;
+  color: gray;
+  padding-bottom: 30px; }
+
+.fotosFoa {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .fotosFoa img {
+    width: 350px;
+    height: 350px; }
+
+.publicaciones {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .publicaciones img {
+    width: 350px;
+    height: 350px; }
 
 @media screen and (max-width: 680px) {
   .empresa img {
@@ -247,15 +257,6 @@ div a {
   background-color: grey;
   padding: 5px 5px;
   font-size: 15px; }
-
-@media screen and (max-width: 1035px) {
-  .publicaciones {
-    grid-template-columns: 1fr; } }
-
-@media screen and (max-width: 830px) {
-  .fotosFoa {
-    display: grid;
-    grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 715px) {
   .local .mapa {
