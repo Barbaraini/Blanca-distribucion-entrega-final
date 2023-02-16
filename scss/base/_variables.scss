@@ -28,3 +28,9 @@ $ancho: 400px;
 
 %flex {display: flex;
     align-items: center;}
+
+    @mixin direction($flex, $direction, $wrap ) {
+    display: $flex;
+    flex-direction: $direction;
+    flex-wrap: $wrap
+     }

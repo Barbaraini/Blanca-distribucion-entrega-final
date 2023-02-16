@@ -176,10 +176,13 @@
 /*--PRODUCTOS--*/
 
 .sanitarios {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    @include direction (flex, row, wrap);
 
+}
+
+
+
+.sanitarios {
     div {
         @extend %flex;
 
@@ -275,9 +278,7 @@
 }
 
 .fotosFoa {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    @include direction (flex, row, wrap);
 
     img {
         width: 350px;
