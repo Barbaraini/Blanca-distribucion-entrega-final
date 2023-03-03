@@ -128,11 +128,15 @@
     @extend %flex;
     flex-direction: column;
     justify-content: center;
-    gap: 50px; padding: 30px; margin: 20px;
-   
+    gap: 50px;
+    padding: 30px;
+    margin: 20px;
+
 }
 
-.destacados.titular{text-decoration: none;}
+.destacados.titular {
+    text-decoration: none;
+}
 
 
 
@@ -145,7 +149,7 @@
 }
 
 .cardDestacada {
-    
+
     width: $ancho /2 + 150;
     height: 350px;
     text-align: center;
@@ -164,7 +168,10 @@
 
 
 
-.carrusel { padding: 30px; margin: 20px;
+.carrusel {
+    padding: 30px;
+    margin: 20px;
+
     div {
         img {
             width: 80%;
@@ -218,7 +225,7 @@
         img {
             width: 100px;
             height: 100px;
-            padding: 10PX;
+
 
         }
     }
