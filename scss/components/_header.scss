@@ -1,13 +1,15 @@
 /*--HEADER--*/
 
-header {
-    navbar {.container-fluid{background-color: grey; font-size: 20px; color: aliceblue; }
+header 
+    .navbar {.container-fluid{background-color: grey; font-size: 20px; color: aliceblue; display: flex; justify-content:center; }
   } .logo {
     color: white;
     font-size: 50px;
     font-weight: bold;
     text-align: start;
+    display: flex;;
   }
-}
+
  
+
 

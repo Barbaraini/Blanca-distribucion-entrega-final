@@ -128,8 +128,11 @@
     @extend %flex;
     flex-direction: column;
     justify-content: center;
-    gap: 50px;
+    gap: 50px; padding: 30px; margin: 20px;
+   
 }
+
+.destacados.titular{text-decoration: none;}
 
 
 
@@ -142,7 +145,7 @@
 }
 
 .cardDestacada {
-    border: 1px solid gray;
+    
     width: $ancho /2 + 150;
     height: 350px;
     text-align: center;
@@ -161,7 +164,7 @@
 
 
 
-.carrusel {
+.carrusel { padding: 30px; margin: 20px;
     div {
         img {
             width: 80%;
@@ -237,11 +240,11 @@
     height: 100%;
 
     h2 {
-        font-size: nth($font-size, );
+        font-size: nth($font-size, 4);
     }
 
     p {
-        font-size: nth($font-size, 1);
+        font-size: nth($font-size, 3);
         text-align: center;
         margin: 20px 15px;
     }
